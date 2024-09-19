@@ -17,7 +17,7 @@ import { currencies } from './currencies';
         
             <form className="form" onSubmit={onSubmit}>
                 <h1>Przelicznik walut</h1>
-            <p>
+            <div>
                 <label>
                     <h2>Kwota w PLN:</h2>
                     <input className="form__item"
@@ -27,8 +27,8 @@ import { currencies } from './currencies';
                     type="number" 
                     required step="0.01"/>
                 </label>
-            </p>
-            <p>
+            </div>
+            <div>
                 <label>
                     <h2>Waluta:</h2>
                     <select className="form__item"
@@ -45,7 +45,7 @@ import { currencies } from './currencies';
 
                     </select>
                 </label>
-            </p>
+            </div>
 
             <p>
             <button className="form__button">Przelicz!</button>
