@@ -1,3 +1,22 @@
+# Currency converter
+
+## Description
+
+It is simple currency converter. It enable convert PLN to currencies USD, EUR or GBP. 
+I used the following programming technologies: 
+
+-HTML<br>
+-CSS<br>
+-Normalize<br>
+-JAVA SCRIPT<br>
+-BEM convention<br>
+-React<br>
+-JSX<br>
+
+![screen](/src/images/screen.jpg)
+
+## Link to the converter
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
