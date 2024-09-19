@@ -20,7 +20,7 @@ import { currencies } from './currencies';
             <p>
                 <label>
                     <h2>Kwota w PLN:</h2>
-                    <input 
+                    <input className="form__item"
                     value={amount}
                     onChange={({ target }) => setAmount(target.value)}
                     placeholder="Wpisz kwotę w PLN" 
@@ -31,7 +31,7 @@ import { currencies } from './currencies';
             <p>
                 <label>
                     <h2>Waluta:</h2>
-                    <select 
+                    <select className="form__item"
                     value={currency}
                     onChange={({ target }) => setCurrency(target.value)}>
 

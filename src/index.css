@@ -41,12 +41,16 @@ code {
   font-size: 30px;
   height: 50px;
   border-radius: 10px;
-}
+  }
 
 .form__button:hover {
   background-color: rgb(77, 186, 222);
-}
+  }
 
 .form__button:active { 
   background-color: rgb(131, 222, 252);
+  }
+
+.form__item {
+  height: 40px;
   }
