@@ -10,22 +10,22 @@ function App() {
 
   const calculateResult = (currency, amount) => {
     const rate = currencies
-    .find(({ short }) => short === currency)
-    .rate;
-  
-  setResult ({
-    sourceAmount: +amount,
-    targetAmount: amount / rate,
-    currency,
-  });
-}
+      .find(({ short }) => short === currency)
+      .rate;
+
+    setResult({
+      sourceAmount: +amount,
+      targetAmount: amount / rate,
+      currency,
+    });
+  }
   return (
-  
-        <div className="container">
-          <Form 
-          result={result}
-          calculateResult={calculateResult}/>
-        </div>
+
+    <div className="container">
+      <Form
+        result={result}
+        calculateResult={calculateResult} />
+    </div>
   );
 }
 
