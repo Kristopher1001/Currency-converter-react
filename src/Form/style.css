@@ -1,4 +1,6 @@
 .form {
+    display: flex;
+    align-self: center;
     font-size: 20px;
     text-align: center;
     background-color: floralwhite;
@@ -6,6 +8,5 @@
     padding: 30px;
     width: 550px;
     border: double 5px;
-    align-self: center;
   };
 
