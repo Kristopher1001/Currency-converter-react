@@ -1,0 +1,10 @@
+.clock {
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    height: 30px;
+    align-self: center;
+    margin: 20px 
+};

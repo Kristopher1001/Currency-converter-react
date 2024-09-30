@@ -32,6 +32,7 @@ code {
   url(https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .form__button {
@@ -54,3 +55,4 @@ code {
 .form__item {
   height: 40px;
   }
+
