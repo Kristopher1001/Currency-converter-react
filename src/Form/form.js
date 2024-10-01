@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./style.css";
+import React, { useState } from 'react';
+import './style.css';
 import { Result } from '../result';
 import { currencies } from './currencies';
 
