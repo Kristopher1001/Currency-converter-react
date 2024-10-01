@@ -28,3 +28,11 @@
 .form__item {
   height: 40px;
 }
+
+.clock {
+  border: 2px dotted;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+};

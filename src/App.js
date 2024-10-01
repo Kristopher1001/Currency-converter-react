@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Form } from './Form/form';
-import { Clock } from './Clock';
+import { Form } from './Form/index.js';
 import { currencies } from './Form/currencies';
 import './index.css';
 
@@ -23,7 +22,6 @@ function App() {
   return (
 
     <div className="container">
-      <Clock />
       <Form
         result={result}
         calculateResult={calculateResult} />
