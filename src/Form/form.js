@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css';
+import './styleForm.css';
 import { Result } from '../result';
 import { currencies } from './currencies';
 
