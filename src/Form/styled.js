@@ -1,4 +1,6 @@
-.form {
+import styled from "styled-components";
+
+export const Formstyled = styled.form`
   text-align: center;
   font-size: 20px;
   background-color: floralwhite;
@@ -6,33 +8,39 @@
   padding: 30px;
   width: 550px;
   border: double 5px;
-}
+  width: 500px;
 
-.form__button {
+
+@media (max-width: 767px) {
+  width: 100%;
+  margin: 0 auto;
+}`
+
+export const Button = styled.button`
   background-color: rgb(61, 195, 240);
   border: 3px solid black;
   font-weight: 700;
   font-size: 30px;
   height: 50px;
   border-radius: 10px;
-}
 
-.form__button:hover {
-  background-color: rgb(77, 186, 222);
-}
+  &:hover {
+    background-color: rgb(77, 186, 222);
+  }
 
-.form__button:active {
-  background-color: rgb(131, 222, 252);
-}
+  &:active {
+    background-color: rgb(131, 222, 252);
+  }
+`;
 
-.form__item {
+export const Input = styled.input`
   height: 40px;
-}
+`;
 
-.clock {
+export const Div = styled.div`
   border: 2px dotted;
   font-family: monospace;
   font-size: 20px;
   text-align: center;
   color: black;
-};
+`;
