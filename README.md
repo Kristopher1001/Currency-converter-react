@@ -12,8 +12,10 @@ I used the following programming technologies:
 -BEM convention<br>
 -React<br>
 -JSX<br>
+-Custom Hooks<br>
+-Styled Components<br>
 
-![screen](/src/images/screen.jpg)
+![screen](/src/images/zrzutekranu.jpg)
 
 ## Link to the converter
 
