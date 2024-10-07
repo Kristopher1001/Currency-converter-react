@@ -6,9 +6,8 @@ export const Formstyled = styled.form`
   background-color: floralwhite;
   margin: 150px 500px 200px 500px;
   padding: 30px;
-  width: 550px;
+  width: 600px;
   border: double 5px;
-  width: 500px;
 
 
 @media (max-width: 767px) {
@@ -37,10 +36,3 @@ export const Input = styled.input`
   height: 40px;
 `;
 
-export const Div = styled.div`
-  border: 2px dotted;
-  font-family: monospace;
-  font-size: 20px;
-  text-align: center;
-  color: black;
-`;

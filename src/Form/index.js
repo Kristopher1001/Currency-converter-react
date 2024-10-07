@@ -1,22 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Result } from "../Result/index.js";
 import { currencies } from "./currencies";
-import { Formstyled, Button, Input, Div } from "./styled.js";
+import { Formstyled, Button, Input } from "./styled.js";
+import { Clock } from '../Clock/index.js'
 
 export const Form = ({ calculateResult, result }) => {
   const [currency, setCurrency] = useState(currencies[0].short);
   const [amount, setAmount] = useState("");
-  const [date, setDate] = useState(new Date());
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setDate(new Date());
-    }, 1000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -26,17 +16,7 @@ export const Form = ({ calculateResult, result }) => {
   return (
 
       <Formstyled onSubmit={onSubmit}>
-        <Div>
-          Dzisiaj jest{" "}
-          {date.toLocaleString(undefined, {
-            weekday: "long",
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit",
-            day: "numeric",
-            month: "long",
-          })}
-        </Div>
+        <Clock />
         <h1>Przelicznik walut</h1>
         <div>
           <label>
