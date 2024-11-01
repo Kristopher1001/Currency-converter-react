@@ -8,6 +8,7 @@ export const Formstyled = styled.form`
   padding: 30px;
   width: 600px;
   border: double 5px;
+  border-radius: 30px;
 
 
 @media (max-width: 767px) {
@@ -34,5 +35,13 @@ export const Button = styled.button`
 
 export const Input = styled.input`
   height: 40px;
+`;
+
+export const Loading = styled.p`
+color: green;
+`;
+
+export const Failure = styled.p`
+color: red;
 `;
 
