@@ -9,9 +9,11 @@ export const useRatesData = () => {
     useEffect(() => {
         const getData = async () => {
             try {
-                const response = await axios.get("https://api.currencyapi.com/v3/latest?apikey=cur_live_zQcHw9IlwTE54nyVdymxjgvRdntXybJQHpaYc5aa");
-                const Data = await response.ratesData
+                const response = await axios.get("currencies.json");
+                const Data = await response.data;
 
+                console.log(response)
+                
                 setRatesData({
                     state: "success",
                     Data,
