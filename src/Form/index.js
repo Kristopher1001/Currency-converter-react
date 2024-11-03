@@ -7,19 +7,18 @@ import { useRatesData } from "../Result/useRatesData.js";
 export const Form = () => {
   const [result, setResult] = useState();
   const ratesData = useRatesData();
+  const [amount, setAmount] = useState("");
+  const [currency, setCurrency] = useState("EUR");
 
   const calculateResult = (currency, amount) => {
-    const rate = ratesData.rates[currency];
+    const rate = ratesData.data[currency].value;
 
     setResult({
       sourceAmount: +amount,
-      targetAmount: amount / rate,
+      targetAmount: amount * rate,
       currency,
     });
   }
-
-  const [amount, setAmount] = useState("");
-  const [currency, setCurrency] = useState("EUR");
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -64,7 +63,7 @@ export const Form = () => {
               value={currency}
               onChange={({ target }) => setCurrency(target.value)}
             >
-              {!!ratesData.rates && Object.keys(ratesData.rates).map((currency) => (
+              {!!ratesData.data && Object.keys(ratesData.data).map((currency) => (
                 <option 
                 key={currency} 
                 value={currency}>
