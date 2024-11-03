@@ -1,0 +1,33 @@
+[
+  {
+    "meta": {
+      "last_updated_at": "2024-11-02T23:59:59Z"
+    },
+    "data": {
+      "BTC": {
+        "code": "BTC",
+        "value": 0.0000035747
+      },
+      "CAD": {
+        "code": "CAD",
+        "value": 0.346582806
+      },
+      "CHF": {
+        "code": "CHF",
+        "value": 0.2161456388
+      },
+      "EUR": {
+        "code": "EUR",
+        "value": 0.2292022573
+      },
+      "GBP": {
+        "code": "GBP",
+        "value": 0.1921799423
+      },
+      "USD": {
+        "code": "USD",
+        "value": 0.2482719987
+      }
+    }
+  }
+]
