@@ -10,7 +10,7 @@ The currencies rate are download from website in real-time.
 -HTML 5<br>
 -CSS 3<br>
 -Normalize<br>
--JAVA SCRIPT ES6<br>
+-Java Script ES6<br>
 -BEM convention<br>
 -React<br>
 -JSX<br>
