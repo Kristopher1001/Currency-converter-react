@@ -19,7 +19,7 @@ The currencies rate are download from website in real-time.
 -axios<br>
 
 
-![screen](/src/images/converter.jpg.jpg)
+![screen](/src/images/converter.jpg)
 
 ## Link to the converter
 
