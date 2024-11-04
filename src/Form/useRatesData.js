@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { CURRENCY_API } from "../URL/apiCurrency";
+import { CURRENCY_API } from "./apiCurrency";
 
 export const useRatesData = () => {
     const [ratesData, setRatesData] = useState({
-        state: "loading",
+        status: "loading",
     });
 
     useEffect(() => {
@@ -12,8 +12,6 @@ export const useRatesData = () => {
             try {
                 const response = await axios.get(CURRENCY_API);
                 const { meta, data } = await response.data;
-
-                console.log(response)
                 
                 setRatesData({
                     state: "success",
@@ -22,7 +20,7 @@ export const useRatesData = () => {
                 });
             } catch (error) {
             setRatesData({
-                state: "error",
+                status: "error",
             });
         }
     };
