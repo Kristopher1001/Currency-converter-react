@@ -10,7 +10,7 @@ import {
   Info,
 } from "./styled.js";
 import { Clock } from "../Clock/index.js";
-import { useRatesData } from "../Result/useRatesData.js";
+import { useRatesData } from "./useRatesData.js";
 
 export const Form = () => {
   const [result, setResult] = useState();
@@ -38,11 +38,11 @@ export const Form = () => {
     <Formstyled onSubmit={onSubmit}>
       <Clock />
       <h1>Przelicznik walut</h1>
-      {ratesData.state === "loading" ? (
+      {ratesData.status === "loading" ? (
         <Loading>
           Poczekaj chwilkę! <br /> Ładuję aktualne kursy walut!
         </Loading>
-      ) : ratesData.state === "error" ? (
+      ) : ratesData.status === "error" ? (
         <Failure>
           Niestety coś poszło źle... 😱 Sprawdź połączenie z internetem i
           spróbuj jeszcze raz!
