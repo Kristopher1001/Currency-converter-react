@@ -2,20 +2,24 @@
 
 ## Description
 
-It is simple currency converter. It enable convert PLN to currencies USD, EUR or GBP. 
-I used the following programming technologies: 
+It is simple currency converter which enable convert PLN to different currencies from whole world. 
+The currencies rate are download from website in real-time. 
 
--HTML<br>
--CSS<br>
+## Technologies
+
+-HTML 5<br>
+-CSS 3<br>
 -Normalize<br>
--JAVA SCRIPT<br>
+-JAVA SCRIPT ES6<br>
 -BEM convention<br>
 -React<br>
 -JSX<br>
 -Custom Hooks<br>
 -Styled Components<br>
+-axios<br>
 
-![screen](/src/images/zrzutekranu.jpg)
+
+![screen](/src/images/converter.jpg.jpg)
 
 ## Link to the converter
 
