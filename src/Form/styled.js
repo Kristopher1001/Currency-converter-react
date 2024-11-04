@@ -4,10 +4,10 @@ export const Formstyled = styled.form`
   text-align: center;
   font-size: 20px;
   background-color: floralwhite;
-  margin: 100px 500px 150px 500px;
+  margin: 100px auto;
   padding: 30px;
   width: 700px;
-  height: 700px;
+  height: 750px;
   border: double 5px;
   border-radius: 30px;
 
@@ -40,11 +40,13 @@ export const Input = styled.input`
 `;
 
 export const Loading = styled.p`
-  color: green;
+  color: rgb(9, 54, 36);
+  font-size: 30px;
 `;
 
 export const Failure = styled.p`
   color: red;
+  font-size: 30px;
 `;
 
 export const Choice = styled.select`
